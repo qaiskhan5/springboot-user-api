@@ -34,3 +34,35 @@ public class UserController {
 
 
 
+/*package com.example.Stud.TeachWork.controllers;
+
+
+import com.example.Stud.TeachWork.DTO.UserProfileDto;
+import com.example.Stud.TeachWork.DTO.UserRegistrationDto;
+import com.example.Stud.TeachWork.serviceInterface.UserServiceInterface;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+
+    @Autowired
+    private UserServiceInterface userService;
+
+    // POST request to register user
+    @PostMapping("/register")
+    public ResponseEntity<String> registerUser(@RequestBody UserRegistrationDto userRegistrationDto) {
+        userService.registerUser(userRegistrationDto);
+        return ResponseEntity.ok("User registered successfully!");
+    }
+
+    // GET request to get user profile by ID
+    @GetMapping("/{id}")
+    public ResponseEntity<UserProfileDto> getUserById(@PathVariable int id) {
+        UserProfileDto userProfileDto = userService.getUserById(id);
+        return ResponseEntity.ok(userProfileDto);
+    }
+}
+*/
